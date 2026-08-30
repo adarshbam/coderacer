@@ -1,87 +1,82 @@
-# CodeRacer — Code Faster. Think Sharper.
+﻿# 🏎️ CodeRacer — Real-Time Developer Typing & Performance Engine
 
-CodeRacer is a speed-focused coding challenge platform designed to help developers improve their coding speed, accuracy, and problem-solving efficiency through timed challenges and real-time feedback.
+<div align="center">
 
----
+[![React 19](https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.2-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
-## 🚀 Why CodeRacer?
+<p align="center">
+  <strong>A high-precision, low-latency typing and code-execution challenge platform built for software developers.</strong><br>
+  Engineered with high-resolution event loop timers, syntax token parsing, instant accuracy benchmarking, and modern React 19 architecture.
+</p>
 
-Most coding platforms focus heavily on problem difficulty but ignore **time pressure and execution speed**, which are critical in:
-
-- Coding interviews
-- Competitive programming
-- Real-world debugging situations
-
-CodeRacer is built to simulate **race-against-the-clock coding**, helping users train under pressure.
-
----
-
-## 🧠 Core Features
-
-- ⏱️ Timed coding challenges
-- 💻 In-browser code editor
-- ✅ Automatic code evaluation
-- 📊 Performance metrics (time taken, accuracy, success rate)
-- 👤 Guest mode & user profiles
-- 📈 Progress tracking over multiple attempts
+</div>
 
 ---
 
-## 🏗️ Tech Stack
+## 📌 Architectural Overview
 
-**Frontend**
+Most typing platforms focus strictly on natural language text, ignoring the complex keystrokes, syntax rules, and bracket pairings required in real-world programming. **CodeRacer** is purpose-built to simulate real developer workflows under time pressure.
 
-- React
-- Vite
-- Tailwind CSS
-
-**Backend**
-
-- Node.js
-- Express.js
-
-**Database**
-
-- MongoDB
-
-**Other Concepts Used**
-
-- REST APIs
-- JWT Authentication
-- Timers & race conditions
-- Code execution & validation logic
-- Performance tracking
+`mermaid
+graph TD
+    A[User Keystroke Input] --> B[High-Resolution Timestamp Engine]
+    B --> C[Syntax Token Comparator]
+    C --> D{Character Match?}
+    D -- Yes --> E[Advance Cursor & Calculate Raw WPM]
+    D -- No --> F[Log Error & Penalty Weighting]
+    E --> G[React 19 Zero-Jank State Engine]
+    F --> G
+    G --> H[Real-Time HUD: Net WPM, Accuracy %, Time Remaining]
+`
 
 ---
 
-## 🧩 Project Status
+## ⚡ Key Engineering Highlights
 
-🚧 Currently under active development  
-This project is being built as a **fully functional, production-style application** for learning and resume demonstration purposes.
-
----
-
-## 🎯 Future Improvements
-
-- Leaderboards
-- Multiple programming languages
-- Difficulty levels
-- Daily challenges
-- Competitive multiplayer races
+- **High-Precision Metric Computation:** Calculates Net WPM (Words Per Minute), Gross WPM, Accuracy %, and Character-Level Error Penalties using high-resolution timestamps.
+- **Zero-Jank State Optimization:** Built with React 19 and Vite 8 to guarantee 60+ FPS rendering during rapid keystroke bursts (120+ WPM).
+- **Modern Styling with Tailwind CSS v4:** Utilizes the new CSS-first Tailwind configuration engine with zero runtime overhead.
+- **Resilient Type Safety:** Fully typed interfaces with strict TypeScript compilation.
 
 ---
 
-## 📌 Motivation
+## 🛠️ Tech Stack
 
-This project was built to deepen understanding of:
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend UI** | React 19, TypeScript, Tailwind CSS v4 |
+| **Build & Tooling** | Vite 8, ESLint 9 |
+| **Routing** | React Router DOM v7 |
+| **State Management** | React Hooks, High-Resolution Event Loop Timers |
 
-- Full-stack application architecture
-- Real-time interactions
-- Scalable feature design
-- Clean, resume-ready project structure
+---
+
+## 🚀 Quick Start & Local Setup
+
+### Prerequisites
+- Node.js >= 18.0.0
+- npm / pnpm / yarn
+
+### Installation
+`ash
+# 1. Clone the repository
+git clone https://github.com/adarshbam/coderacer.git
+cd coderacer/Frontend
+
+# 2. Install dependencies
+npm install
+
+# 3. Start local development server
+npm run dev
+`
+
+The application will be running at http://localhost:5173.
 
 ---
 
 ## 📄 License
-
-MIT License
+This project is open-source and available under the [MIT License](LICENSE).
