@@ -1,4 +1,4 @@
-﻿# 🏎️ CodeRacer — Real-Time Developer Typing & Performance Engine
+# 🏎️ CodeRacer — Real-Time Developer Typing & Performance Engine
 
 <div align="center">
 
@@ -21,7 +21,7 @@
 
 Most typing platforms focus strictly on natural language text, ignoring the complex keystrokes, syntax rules, and bracket pairings required in real-world programming. **CodeRacer** is purpose-built to simulate real developer workflows under time pressure.
 
-`mermaid
+```mermaid
 graph TD
     A[User Keystroke Input] --> B[High-Resolution Timestamp Engine]
     B --> C[Syntax Token Comparator]
@@ -31,7 +31,7 @@ graph TD
     E --> G[React 19 Zero-Jank State Engine]
     F --> G
     G --> H[Real-Time HUD: Net WPM, Accuracy %, Time Remaining]
-`
+```
 
 ---
 
@@ -62,7 +62,8 @@ graph TD
 - npm / pnpm / yarn
 
 ### Installation
-`ash
+
+```bash
 # 1. Clone the repository
 git clone https://github.com/adarshbam/coderacer.git
 cd coderacer/Frontend
@@ -72,9 +73,9 @@ npm install
 
 # 3. Start local development server
 npm run dev
-`
+```
 
-The application will be running at http://localhost:5173.
+The application will be running at `http://localhost:5173`.
 
 ---
 
